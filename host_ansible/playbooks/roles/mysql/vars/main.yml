@@ -1,0 +1,7 @@
+---
+ansible_user: vagrant
+ansible_ssh_private_key_file: /home/vagrant/id_rsa
+ansible_python_interpreter: /usr/bin/python3
+db_username: silver
+db_password: pass
+db_name: application_db

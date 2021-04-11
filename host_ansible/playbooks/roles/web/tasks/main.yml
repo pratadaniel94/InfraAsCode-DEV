@@ -1,0 +1,15 @@
+---
+- name: 'Instalar python interpret'
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600 #1 hora
+    name: [ "python3.6", "python3-pip" ]
+    state: latest
+  become: yes
+- name: 'Copiar repositorio do projeto'
+  copy:
+    src: /home/vagrant/website
+    dest: /vagrant
+    owner: vagrant
+    group: vagrant
+    mode: 0644

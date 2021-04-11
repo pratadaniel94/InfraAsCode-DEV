@@ -1,0 +1,7 @@
+---
+- hosts: mysqlserver
+  roles:
+    - mysql
+- hosts: webserver
+  roles:
+    - web
